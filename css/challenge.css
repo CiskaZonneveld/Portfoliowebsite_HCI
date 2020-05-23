@@ -54,7 +54,11 @@ article div img{
     -o-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
     transform: rotate(-90deg);
+    margin-right: 8%;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
+
 .code{
     height: 50%;
     width: 50%;
