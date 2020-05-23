@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <title>Workshop AR en VR</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+            
+
+        <!-- eigen CSS-->
+        <link rel="stylesheet" href="css/main.css"/>
+        <link rel="stylesheet" href="css/challenge.css"/>
+        
+        <!--naar fontawesome voor de fa classes-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        
+        <!-- importeren van lettertypes-->   
+        <style>
+        
+        </style>
+
+    </head>
+    
+    <body>
+        <div class="btn">
+            <span class="fas fa-bars"></span>
+        </div>
+        <nav class="sidebar">
+              <div class="text">Menu</div>
+            <ul>                                                                <!-- pagina's linken-->
+                <li><a href="index.html">Home</a></li>                    <!-- aanpassen per pagina-->
+                <li>
+                    <a href="#" class="feat-btn">Challenges
+                        <span class="fas fa-caret-down first"></span>
+                    </a>
+                    <ul class="feat-show">
+                        <li><a href="Challenge_ARenVR.html">AR en VR</a></li>
+                        <li><a href="#">W</a></li>
+                        <li><a href="#">AC</a></li>
+                        <li><a href="#">PI</a></li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="#" class="serv-btn">Workshops
+                        <span class="fas fa-caret-down second"></span>
+                    </a>
+                    <ul class="serv-show">
+                        <li><a href="#">AR en VR</a></li>
+                        <li><a href="workshop_Arduino.html">Arduino</a></li>
+                        <li><a href="#">CV</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Gast colleges</a></li>
+            </ul>
+        </nav>
+        
+        <header>
+            <h1>Workshop</h1>
+            <h2>AR en VR</h2>
+        </header>
+        
+        <section>
+            <article>
+                <h3>Unreal Engine</h3>
+                <p>In 'Unreal Engine' heb ik de beschrijving gevolgt die op <a href="https://www.raywenderlich.com/771-unreal-engine-4-tutorial-for-beginners-getting-started" target="_blank">BB</a> staat. Ik vond het nog best lastig om alles na te doen en daarom was ik hier nog best lang mee bezig. Uiteindelijk is het wel gelukt. Ik heb een banaan gemaakt die ronddraaid. Een screenrecord van het eindproduct eb de verschillende stappen die ik heb uitgevoerd kan je <a href="https://youtu.be/XWjeU5s3VlQ" target="_blank">hier</a> vinden.</p>
+                <div>
+                    <img src="workshopAR&VR/Banana_Model%2015-5-2020%2018_36_22.png"/>
+                </div>
+                <div>
+                    <img src="workshopAR&VR/Banana_Model%2015-5-2020%2018_37_09.png"/>
+                </div>
+            </article>
+            
+            <article>
+                <h3>A-frame</h3>
+                <p>In A-frame heb ik de stappen gevolgd die in het document stonden op BB. In het begin moest ik even wennen aan de verschillende richtingen waarin een object kan bweegen: X, Y en Z. Ook de laatste opdracht was erg moeilijk, maar ik uiteindelijk wel gelukt. Een link naar alle gemaakte opdrachten vind je <a href="https://ciskazonneveld.github.io/A-Frame/" target="_blank">hier</a>. 
+                </p>
+                <div>
+                    <img src="workshopAR&VR/Hello,%20WebVR!%20%E2%80%A2%20A-Frame%20-%20Mozilla%20Firefox%2019-5-2020%2013_34_41.png"/>
+                </div>
+                <div>
+                    <img src="workshopAR&VR/Hello,%20WebVR!%20%E2%80%A2%20A-Frame%20-%20Mozilla%20Firefox%2019-5-2020%2013_30_22.png"/>
+                </div>
+            </article>
+            
+            
+           
+            
+            
+           
+        </section>
+    </body>
+    
+    
+    
+    
+    
+
+    <!--  javascript voor nav-->
+    <script>    
+        $('.btn').click(function(){
+          $(this).toggleClass("click");
+          $('.sidebar').toggleClass("show");
+        });
+          $('.feat-btn').click(function(){
+            $('nav ul .feat-show').toggleClass("show");
+            $('nav ul .first').toggleClass("rotate");
+          });
+          $('.serv-btn').click(function(){
+            $('nav ul .serv-show').toggleClass("show1");
+            $('nav ul .second').toggleClass("rotate");
+          });
+          $('nav ul li').click(function(){
+            $(this).addClass("active").siblings().removeClass("active");
+          });
+    </script>
+</html>

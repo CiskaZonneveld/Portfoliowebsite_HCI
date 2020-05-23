@@ -1,0 +1,46 @@
+/*****************************************************kleine versie***********************************************/
+header{
+    margin: 100px 120px;
+}
+nav{
+       margin-top: -100px;                                 /*anders gaat die naar onder door de margin van de header*/
+    }
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    color: #1b1b1b;
+    font-size: 2.5em;
+    
+    margin-bottom: 20px;
+}
+h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    color: #1b1b1b;
+    font-size: 1.3em;
+}
+section{
+    padding: 5% 15%;
+    background-color: aliceblue;
+}
+
+
+/*************************************************einde kleine versie********************************************/
+
+
+
+
+/***********************************************Grote versie*************************************************************************/
+@media only screen and (min-width: 790px){
+    h1{
+        font-size: 4.5em;
+    }
+    h2{
+        font-size: 2em;
+    } 
+}
+
+
+/**********************************************einde grote versie*****************************************************************/

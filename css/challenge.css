@@ -1,0 +1,98 @@
+/*****************************************************kleine versie***********************************************/
+header{
+    margin: 100px 120px;
+}
+nav{
+       margin-top: -100px;                                 /*anders gaat die naar onder door de margin van de header*/
+    }
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    color: #1b1b1b;
+    font-size: 2.1em;
+    text-shadow: 2px 2px 3px grey;
+}
+h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    color: #1b1b1b;
+    font-size: 1.3em;
+    text-shadow: 1px 1px 3px grey;
+}
+section{
+    padding: 8% 5%;
+    background-color: aliceblue;
+}
+article{
+    margin-bottom: 60px;
+}
+h3{
+    font-size: 1.3em;
+    font-weight: 600;
+    text-decoration: underline;
+}
+h4{
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+article div img{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    height: 100%;
+    width: 100%;
+}
+.code{
+    height: 500%;
+    width: 50%;
+}
+
+/*************************************************einde kleine versie********************************************/
+
+/************************************************middelste versie**********************************************/
+@media only screen and (min-width: 690px) and (max-width: 1199px){
+    h1{
+        font-size: 2.8em;
+    }
+    h2{
+        font-size: 1.5em;
+    } 
+    section{
+        padding: 5% 10%;
+    }
+    article div img{
+        height: 90%;
+        width: 90%;
+    }
+
+}
+
+/**************************************************einde middelste versie**************************************/
+
+
+/***********************************************Grote versie*************************************************************************/
+@media only screen and (min-width: 1200px){
+    h1{
+        font-size: 3.1em;
+    }
+    h2{
+        font-size: 1.8em;
+    } 
+    section{
+        padding: 5% 9%;
+    }
+    article p{
+        column-count: 2;
+        column-gap: 3.5em;
+    }
+    article div img{
+        height: 70%;
+        width: 70%;
+    }
+
+}
+
+
+/**********************************************einde grote versie*****************************************************************/
