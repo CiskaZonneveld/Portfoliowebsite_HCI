@@ -45,8 +45,15 @@ article div img{
     width: 100%;
 }
 .foto{
-    height: 80%;
-    width: 80%;
+    height: 40%;
+    width: 40%;
+}
+.rotate90 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
 }
 .code{
     height: 50%;
